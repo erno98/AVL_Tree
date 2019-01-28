@@ -760,7 +760,7 @@ template<typename Key, typename Info>
 typename Dictionary<Key, Info>::Node *Dictionary<Key, Info>::search(const Key &aKey, Dictionary::Node *root) {
 
         if(!root)
-            return root;
+            return nullptr;
 
         if (root->key == aKey)
             return root;
